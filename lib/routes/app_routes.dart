@@ -1,3 +1,4 @@
+import 'package:animal_kart/presentation/doctor_dashbaord/doctor_home.dart';
 import 'package:flutter/material.dart';
 import '../presentation/seller_dashboard/seller_dashboard.dart';
 import '../presentation/splash_screen/splash_screen.dart';
@@ -15,6 +16,9 @@ class AppRoutes {
   static const String buffaloDetails = '/buffalo-details-screen';
   static const String roleSelection = '/role-selection-screen';
   static const String buyerDashboard = '/superVisor-dashboard';
+  static const String doctorDashboard = '/doctor-dashboard';
+  
+  
 
   static Map<String, WidgetBuilder> routes = {
     initial: (context) => const SplashScreen(),
@@ -24,6 +28,7 @@ class AppRoutes {
     buffaloDetails: (context) => const BuffaloDetailsScreen(),
     roleSelection: (context) => const RoleSelectionScreen(),
     buyerDashboard: (context) => const BuyerDashboard(),
+    doctorDashboard: (context) => const DoctorHome(),
     // TODO: Add your other routes here
   };
 }

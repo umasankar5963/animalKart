@@ -243,10 +243,7 @@ class _LoginScreenState extends State<LoginScreen> {
         Navigator.pushReplacementNamed(context, '/superVisor-dashboard');
         break;
       case 'doctor':
-        // Navigate to doctor dashboard when available
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Doctor dashboard coming soon')),
-        );
+         Navigator.pushReplacementNamed(context, '/doctor-dashboard');
         break;
       case 'transport':
         // Navigate to transport dashboard when available
