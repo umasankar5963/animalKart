@@ -42,8 +42,8 @@ class MyApp extends ConsumerWidget {
         return MaterialApp(
           title: 'AnimalKart',
           theme: AppTheme.lightTheme,
-          darkTheme: AppTheme.darkTheme,
-          themeMode: themeController.currentTheme,
+        darkTheme: AppTheme.darkTheme,
+        themeMode: themeController.currentTheme,
           builder: (context, child) {
             return MediaQuery(
               data: MediaQuery.of(

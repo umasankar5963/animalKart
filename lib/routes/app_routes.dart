@@ -1,4 +1,6 @@
 import 'package:animal_kart/presentation/doctor_dashbaord/doctor_home.dart';
+
+import 'package:animal_kart/presentation/supervisor_dashboard/supervisor_home.dart';
 import 'package:flutter/material.dart';
 import '../presentation/seller_dashboard/seller_dashboard.dart';
 import '../presentation/splash_screen/splash_screen.dart';
@@ -17,6 +19,7 @@ class AppRoutes {
   static const String roleSelection = '/role-selection-screen';
   static const String buyerDashboard = '/superVisor-dashboard';
   static const String doctorDashboard = '/doctor-dashboard';
+  static const String supervisorDashboard = '/supervisor-dashboard';
   
   
 
@@ -29,6 +32,7 @@ class AppRoutes {
     roleSelection: (context) => const RoleSelectionScreen(),
     buyerDashboard: (context) => const BuyerDashboard(),
     doctorDashboard: (context) => const DoctorHome(),
+    supervisorDashboard : (context) => const SupervisorHome()
     // TODO: Add your other routes here
   };
 }

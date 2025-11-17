@@ -25,10 +25,10 @@ class _LoginScreenState extends State<LoginScreen> {
   final Map<String, Map<String, String>> _mockCredentials = {
     'buyer': {'email': 'buyer@animalkart.com', 'password': 'buyer123'},
     'supervisor': {
-      'email': 'superVisor@animalkart.com',
-      'password': 'superVisor123',
+      'email': 'super@gmail.com',
+      'password': 'super123',
     },
-    'doctor': {'email': 'doctor@animalkart.com', 'password': 'doctor123'},
+    'doctor': {'email': 'doctor@gmail.com', 'password': 'doctor123'},
     'transport': {
       'email': 'transport@animalkart.com',
       'password': 'transport123',
@@ -59,7 +59,7 @@ class _LoginScreenState extends State<LoginScreen> {
     switch (_selectedRole.toLowerCase()) {
       case 'buyer':
         return AppTheme.lightTheme.colorScheme.tertiary;
-      case 'superVisor':
+      case 'supervisor':
         return const Color(0xFFF57C00);
       case 'doctor':
         return const Color(0xFF7B1FA2);
@@ -74,7 +74,7 @@ class _LoginScreenState extends State<LoginScreen> {
     switch (_selectedRole.toLowerCase()) {
       case 'buyer':
         return 'shopping_cart';
-      case 'superVisor':
+      case 'supervisor':
         return 'store';
       case 'doctor':
         return 'medical_services';
@@ -239,17 +239,15 @@ class _LoginScreenState extends State<LoginScreen> {
       case 'buyer':
         Navigator.pushReplacementNamed(context, '/buyer-dashboard');
         break;
-      case 'superVisor':
-        Navigator.pushReplacementNamed(context, '/superVisor-dashboard');
+      case 'supervisor':
+        Navigator.pushReplacementNamed(context, '/supervisor-dashboard');
         break;
       case 'doctor':
          Navigator.pushReplacementNamed(context, '/doctor-dashboard');
         break;
       case 'transport':
-        // Navigate to transport dashboard when available
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Transport dashboard coming soon')),
-        );
+
+         Navigator.pushReplacementNamed(context, '/supervisor-dashboard');
         break;
     }
   }

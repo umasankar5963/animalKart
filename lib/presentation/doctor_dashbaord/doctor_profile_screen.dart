@@ -155,7 +155,7 @@ class DoctorProfileScreen extends StatelessWidget {
           Text(
             "Assigned Buffaloes",
             style: TextStyle(
-                color: AppColors.textGrey,
+                color: AppColors.textGrey,//srikrishnastrive //Srikrishnastrive@123
                 fontSize: 15,
                 fontWeight: FontWeight.w500),
           ),
