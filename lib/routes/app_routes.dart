@@ -17,6 +17,7 @@ class AppRoutes {
   static const String login = '/login-screen';
   static const String buffaloDetails = '/buffalo-details-screen';
   static const String roleSelection = '/role-selection-screen';
+  static const String buyerDashboard = '/buyer-dashboard';
   static const String buyerDashboard = '/superVisor-dashboard';
   static const String doctorDashboard = '/doctor-dashboard';
   static const String supervisorDashboard = '/supervisor-dashboard';

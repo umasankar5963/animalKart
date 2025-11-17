@@ -265,9 +265,8 @@ class _LoginScreenState extends State<LoginScreen> {
     final mockCreds = _mockCredentials[_selectedRole]!;
 
     if (email == mockCreds['email'] && password == mockCreds['password']) {
-      // Show OTP verification for demo
       setState(() => _isLoading = false);
-      _showOTPVerification();
+      _navigateToDashboard();
     } else {
       setState(() => _isLoading = false);
       ScaffoldMessenger.of(context).showSnackBar(
