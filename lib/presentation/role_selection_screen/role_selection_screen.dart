@@ -88,15 +88,6 @@ class _RoleSelectionScreenState extends State<RoleSelectionScreen> {
     );
   }
 
-  void _handleGuestBrowse() {
-    HapticFeedback.lightImpact();
-    Navigator.pushNamed(
-      context,
-      '/buyer-dashboard',
-      arguments: {'isGuest': true},
-    );
-  }
-
   Future<bool> _onWillPop() async {
     // Exit app confirmation
     return await showDialog<bool>(

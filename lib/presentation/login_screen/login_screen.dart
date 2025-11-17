@@ -475,6 +475,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 style: TextStyle(
                                   color: _getRoleColor(),
                                   fontWeight: FontWeight.w500,
+                                  fontSize: 12.spa,
                                 ),
                               ),
                             ),
@@ -527,43 +528,42 @@ class _LoginScreenState extends State<LoginScreen> {
 
                   SizedBox(height: 4.h),
 
-                  // Biometric Authentication Section
-                  Container(
-                    width: double.infinity,
-                    padding: EdgeInsets.all(4.w),
-                    decoration: BoxDecoration(
-                      color: AppTheme.lightTheme.cardColor,
-                      borderRadius: BorderRadius.circular(12),
-                      border: Border.all(
-                        color: _getRoleColor().withValues(alpha: 0.2),
-                      ),
-                    ),
-                    child: Column(
-                      children: [
-                        CustomIconWidget(
-                          iconName: 'fingerprint',
-                          color: _getRoleColor(),
-                          size: 32,
-                        ),
-                        SizedBox(height: 1.h),
-                        Text(
-                          'Use Biometric Login',
-                          style: AppTheme.lightTheme.textTheme.titleSmall
-                              ?.copyWith(
-                                color: _getRoleColor(),
-                                fontWeight: FontWeight.w600,
-                              ),
-                        ),
-                        SizedBox(height: 0.5.h),
-                        Text(
-                          'Touch sensor or use Face ID',
-                          style: AppTheme.lightTheme.textTheme.bodySmall
-                              ?.copyWith(color: Colors.grey[600]),
-                        ),
-                      ],
-                    ),
-                  ),
-
+                  // // Biometric Authentication Section
+                  // Container(
+                  //   width: double.infinity,
+                  //   padding: EdgeInsets.all(4.w),
+                  //   decoration: BoxDecoration(
+                  //     color: AppTheme.lightTheme.cardColor,
+                  //     borderRadius: BorderRadius.circular(12),
+                  //     border: Border.all(
+                  //       color: _getRoleColor().withValues(alpha: 0.2),
+                  //     ),
+                  //   ),
+                  //   child: Column(
+                  //     children: [
+                  //       CustomIconWidget(
+                  //         iconName: 'fingerprint',
+                  //         color: _getRoleColor(),
+                  //         size: 32,
+                  //       ),
+                  //       SizedBox(height: 1.h),
+                  //       Text(
+                  //         'Use Biometric Login',
+                  //         style: AppTheme.lightTheme.textTheme.titleSmall
+                  //             ?.copyWith(
+                  //               color: _getRoleColor(),
+                  //               fontWeight: FontWeight.w600,
+                  //             ),
+                  //       ),
+                  //       SizedBox(height: 0.5.h),
+                  //       Text(
+                  //         'Touch sensor or use Face ID',
+                  //         style: AppTheme.lightTheme.textTheme.bodySmall
+                  //             ?.copyWith(color: Colors.grey[600]),
+                  //       ),
+                  //     ],
+                  //   ),
+                  // ),
                   SizedBox(height: 4.h),
 
                   // Switch Role Section
