@@ -12,13 +12,12 @@ import '../presentation/buyer_dashboard/buyer_dashboard.dart';
 class AppRoutes {
   // TODO: Add your routes here
   static const String initial = '/';
-  static const String sellerDashboard = '/superVisor-dashboard';
+  static const String sellerDashboard = '/supervisor-dashboard';
   static const String splash = '/splash-screen';
   static const String login = '/login-screen';
   static const String buffaloDetails = '/buffalo-details-screen';
   static const String roleSelection = '/role-selection-screen';
   static const String buyerDashboard = '/buyer-dashboard';
-  static const String buyerDashboard = '/superVisor-dashboard';
   static const String doctorDashboard = '/doctor-dashboard';
   static const String supervisorDashboard = '/supervisor-dashboard';
   
