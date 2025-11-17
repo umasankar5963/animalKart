@@ -59,7 +59,7 @@ class _LoginScreenState extends State<LoginScreen> {
     switch (_selectedRole.toLowerCase()) {
       case 'buyer':
         return AppTheme.lightTheme.colorScheme.tertiary;
-      case 'superVisor':
+      case 'supervisor':
         return const Color(0xFFF57C00);
       case 'doctor':
         return const Color(0xFF7B1FA2);
@@ -74,7 +74,7 @@ class _LoginScreenState extends State<LoginScreen> {
     switch (_selectedRole.toLowerCase()) {
       case 'buyer':
         return 'shopping_cart';
-      case 'superVisor':
+      case 'supervisor':
         return 'store';
       case 'doctor':
         return 'medical_services';
@@ -239,8 +239,8 @@ class _LoginScreenState extends State<LoginScreen> {
       case 'buyer':
         Navigator.pushReplacementNamed(context, '/buyer-dashboard');
         break;
-      case 'superVisor':
-        Navigator.pushReplacementNamed(context, '/superVisor-dashboard');
+      case 'supervisor':
+        Navigator.pushReplacementNamed(context, '/supervisor-dashboard');
         break;
       case 'doctor':
         // Navigate to doctor dashboard when available
@@ -270,9 +270,8 @@ class _LoginScreenState extends State<LoginScreen> {
     final mockCreds = _mockCredentials[_selectedRole]!;
 
     if (email == mockCreds['email'] && password == mockCreds['password']) {
-      // Show OTP verification for demo
       setState(() => _isLoading = false);
-      _showOTPVerification();
+      _navigateToDashboard();
     } else {
       setState(() => _isLoading = false);
       ScaffoldMessenger.of(context).showSnackBar(
